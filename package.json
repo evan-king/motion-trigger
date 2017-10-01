@@ -4,7 +4,6 @@
   "description": "Slack integration notifying activity from security cameras",
   "main": "notify.js",
   "scripts": {
-    "build": "babel notify.js --out-file bundle.js",
     "deploy-webtask": "wt create -p node8 notify.js --name notify --secret SLACK_TOKEN=${SLACK_TOKEN}",
     "start": "node server.js",
     "logs": "wt logs"

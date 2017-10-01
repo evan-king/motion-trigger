@@ -32,10 +32,10 @@ A small hacking exercise.  Provides a limited-access means of allowing security 
       events must be kept short with quick idle timeouts and small maximum durations.
     
     - For the events where you'd like to be notified of activity, supply this script:
-      `"curl request POST https://<your-webtask-subdomain>.sandbox.auth0-extend.com/notify?motion=1"`
+      `curl request POST https://<your-webtask-subdomain>.sandbox.auth0-extend.com/notify?motion=1`
      
     - For the events supplying a file you'd like to post, supply this script:
-      `"curl request POST https://<your-webtask-subdomain>.sandbox.auth0-extend.com/notify?image=1 --data-binary \"@%f\""`
+      `curl request POST https://<your-webtask-subdomain>.sandbox.auth0-extend.com/notify?image=1 --data-binary "@%f"`
     
   - Modify as desired to support custom messages/channels, distinguish between multiple cameras,
     link to relevant live feeds, etc.
